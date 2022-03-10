@@ -10,48 +10,7 @@ body{
     background-color: black;
 }
 
-.container, .container2, hr, .containerFooter{
-    width: 1200px;
-    margin: auto;
-}
-
 /* HEADER */
-
-.divLogo{
-    background-color: white;
-}
-
-.imgLogo{
-    height: 60px;
-    display: flex;
-    margin: auto;
-}
-
-.imgHeader{
-    width: 103px;
-    height: 21px;
-    margin-right: 80px;
-}
-
-header{
-    background-color: #181818;
-    height: 50px;
-}
-
-nav{
-    gap: 50px;
-    margin: 0 0 0 80px;
-}
-
-.pLivraison{
-text-align: center;
-background-color: rgb(170, 29, 29);
-color: white;
-font-size: smaller;
-font-weight: bold;
-}
-
-/* MAIN */
 
 .flex{
     display: flex;
@@ -59,19 +18,193 @@ font-weight: bold;
     align-items: center;
 }
 
-.pCollection{
-    font-weight: bold;
-    margin: 100px 0 30px 76px;
+header{
+    margin-top: 16px;
+    width: 1200px;
+    margin: auto;
 }
 
-.container img, .container2 img{
+.logo{
+    height: 50px;
+    width: auto;
+}
+
+.divIcons{
+    gap: 20px;
+}
+
+.iconLoupe{
+    height: 22px;
+    width: auto;
+    margin: 2px 2px 0px 0;
+}
+
+nav{
+    gap: 40px;
+}
+
+/* DEBUT ANIMATION MENU NAV  */
+nav a{
+    position: relative;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: sandybrown;
+    transition: 0,9s;
+}
+
+nav a:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 23px;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+
+nav a:hover:after{
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+
+} /* FIN ANIMATION MENU NAV  */
+
+
+.divLivraison{
+    margin-bottom: 10px;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #181818;
+    font-weight: bold;
+    font-size: x-small;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 2px #181818;
+}
+
+/* MAIN PAGE 1*/
+
+main{
+    width: 1200px;
+    margin: auto;
+}
+
+.videoAccueil{
+left: 75px;
+top: 103px;
+position: absolute;
+width: 1200px;
+height: auto;
+}
+
+.p1{
+position: absolute;
+color: black;
+left: 180px;
+top: 1090px;
+font-size: 28px;
+font-weight: bold;
+/* font-family: 'Almarai', sans-serif; */
+}
+
+.p2{
+    position: absolute;
+    color: black;
+    left: 720px;
+    top: 1560px;
+    font-size: 28px;
+    font-weight: bold;
+    /* font-family: 'Almarai', sans-serif; */
+    }
+
+.une, .div2, .containerFooter{
+    width: 1200px;
+    margin: auto;
+}
+
+.une{
+    margin-top: 575px;
+}
+
+.deux{
+    width: 357px;
+    height: 520px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.trois{
+    width: 820px;
+    height: 520px;  
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+/* MAIN PAGE 2 */
+
+.pCollection{
+    font-weight: bold;
+    margin: 100px 0 30px 0;
+}
+
+.imgCarre{
     width: 347px;
     height: 308px;
-    padding-bottom: 5px;
+    object-fit: cover;
 }
 
 figure{
     padding-bottom: 80px;
+}
+
+figcaption{
+    margin-top: 10px;
+}
+
+span{
+    color: tan;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+
+}
+
+/* MAIN PAGE 3 */
+
+.imgChemiseBlc{
+    height: 480px;
+    width: 385px;
+    object-fit: cover;
+}
+
+.containerProduit{
+    padding-top: 45px;
+}
+
+.nomProduit{
+font-weight: bold;
+font-size: 17px;
+color: white;
+}
+
+.pDescription{
+    padding: 0px 15px 5px 0px;
+}
+
+.videoChemise{
+    height: 480px;
+    width: auto;
+    right: 483px;
 }
 
 /* FOOTER */
@@ -96,9 +229,5 @@ figure{
 .copyright{
     font-size: x-small;
     text-align: center;
-    margin: 10px 0 10px 0;
-}
-
-hr{
-    width: 200px;
+    margin: 0 0 15px 0;
 }

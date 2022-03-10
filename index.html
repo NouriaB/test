@@ -1,82 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVN</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" href="images/petitLogo.jpg">
-</head>
-<body>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MVN</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="icon" href="images/petitLogo.jpg">
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    </head>
+    <body>
+
     <!-- HEADER -->
-    
-<p class="pLivraison">Livraison offerte dès 150 € & retours sous 30 jours</p>
-    <div class="divLogo">
-    <img class="imgLogo" src="images/logo2.jpg" alt="logo">
-</div>
-<header class="flex">
-    <nav class="flex">
-        <a href="">NOUVEAUTÉS</a>
-        <a href="">HOMME</a>
-        <a href="">PROMOTION</a>
-        <a href="">COLLECTION</a>
-    </nav>
-    <img class="imgHeader" src="images/header-icons.png" alt="icone panier">
-</header>
 
-<!-- MAIN -->
-<main>
-    <p class="pCollection">Collection Black & White</p>
+    <div class="divLivraison"><a href="#">Livraison standard gratuite</a></div>
 
-    <div class="container flex">
-       <figure><img src="images/vestecostume.jpg" alt="" onmouseover="this.src='images/vestecostume2.jfif'" onmouseout="this.src='images/vestecostume.jpg'">
-        <figcaption>Veste de costume</figcaption></figure>
-        <figure><img src="images/noeudpapillon.jfif" alt="" onmouseover="this.src='images/noeudpapillon2.jfif'" onmouseout="this.src='images/noeudpapillon.jfif'">
-        <figcaption>Noeud papillon pré-noué en soie</figcaption></figure>    
-        <figure>
-        <img src="images/giletnoir.jpg" alt="" onmouseover="this.src='images/giletnoir2.jfif'" onmouseout="this.src='images/giletnoir.jpg'">
-        <figcaption>Gilet en satin de soie</figcaption> </figure>
-    </div>
+    <header class="flex">
+        <a href="index.html"><img class="logo" src="images/logoFinCarre.jpg" alt="logo"></a>
+       <nav class="flex">
+            <a href="index.html">ACCUEIL</a>
+            <a href="#">NOUVEAUTÉS</a>
+            <a href="#">HOMME</a>
+            <a href="#">PROMOTIONS</a>
+            <a href="page2.html">COLLECTION</a>
+        </nav>
+        <div class="divIcons flex">
+        <img class="iconLoupe" src="images/icon-search.png" alt="icone loupe">
+        <span class="iconify" data-icon="ant-design:user-outlined" style="color: white;" data-width="27" data-height="27"></span>
+        <span class="iconify" data-icon="clarity:shopping-bag-line" style="color: white;" data-width="27" data-height="27"></span>
+        </div>
+    </header>
 
-    <div class="container2 flex">
-        <figure><img src="images/chemiseblanche.jpg" alt="" onmouseover="this.src='images/chemiseblanche2.jfif'" onmouseout="this.src='images/chemiseblanche.jpg'">
-        <figcaption>Chemise à col cassé en popeline</figcaption></figure>
-        <figure><img src="images/pantaloncostume.jpg" alt="" onmouseover="this.src='images/pantaloncostume2.jfif'" onmouseout="this.src='images/pantaloncostume.jpg'">
-        <figcaption>Pantalon de costume</figcaption></figure>
-        <figure><img src="images/derbys.jpg" alt="" onmouseover="this.src='images/derbys2.jpg'" onmouseout="this.src='images/derbys.jpg'">
-        <figcaption>Derbys en cuir à laçage</figcaption></figure>
-    </div>
-</main>
+    <!-- MAIN -->
+
+    <p class="p1">L'ÉLÉGANCE EN TOUTE <br>  CIRCONSTANCE</p>
+    <img class="une flex" src="images/page1/une.jpg" alt="Photo homme en costume torse nu">
+    <video class="videoAccueil" autoplay muted loop src="images/page1/videoaccueilcoupee.mp4"></video>
+    <a href="page2.html"><p class="p2">LE CHIC UNIVERSEL</p></a>
+    <div class="div2 flex" ><img class="deux" src="images/page1/deux.jpg" alt="Photo homme en costume">
+    <img class="trois" src="images/page1/trois.jpg" alt="Photo homme en costume qui fume"></div>
 
 <!-- FOOTER -->
 <footer>
-<div class="containerFooter flex">
-
-    <div class="miniDivFooter1">
-        <p>Rejoignez-nous</p>
-        <div class="flex">    
-        <img src="images/icon-fb.png" alt="">
-        <img src="images/icon-insta.png" alt="">
-        <img src="images/icon-twitter.png" alt="">
+    <div class="containerFooter flex">
+    
+        <div class="miniDivFooter1">
+            <p>Rejoignez-nous</p>
+            <div class="flex">    
+            <img src="images/icon-fb.png" alt="">
+            <img src="images/icon-insta.png" alt="">
+            <img src="images/icon-twitter.png" alt="">
+            </div>
+        </div>
+        <div class="miniDivFooter2">
+            <a href="#">Service</a>
+            <a href="#">E-commande</a>
+            <a href="#">Entreprise</a>
+            <a href="#">Informations</a>
         </div>
     </div>
-    <div class="miniDivFooter2">
-        <a href="#">Service</a>
-        <a href="#">E-commande</a>
-        <a href="#">Entreprise</a>
-        <a href="#">Informations</a>
-    </div>
-</div>
-
-<hr>
-<p class="copyright" >Copyright © 2022 MVN</p>
-
-</footer>
-
-</body>
-</html>
+    <p class="copyright" >Copyright © 2022 MVN All rights reserved</p>
+    </footer>
+    
+    </body>
+    </html>
